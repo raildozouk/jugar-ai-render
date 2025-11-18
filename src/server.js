@@ -15,13 +15,26 @@ const app = express();
 const PORT = process.env.PORT || 10000;
 
 // Middlewares de seguridad
-app.use(helmet());
+// Configurar Helmet com CSP relaxado para dashboard
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", "data:", "https:"],
+    },
+  },
+}));
 app.use(cors());
 app.use(compression());
 
 // Middleware para parsear JSON
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Servir arquivos estáticos
+app.use(express.static('public'));
 
 // Middleware de logging
 app.use((req, res, next) => {
