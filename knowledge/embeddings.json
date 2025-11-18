@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "model": "text-embedding-3-large",
+    "chunkSize": 1000,
+    "chunkOverlap": 200,
+    "totalChunks": 10,
+    "generatedAt": "2024-11-18T00:00:00.000Z",
+    "embeddingDimension": 3072,
+    "note": "Mock embeddings for demonstration - replace with real embeddings in production"
+  },
+  "embeddings": [
+    {
+      "id": 0,
+      "text": "# Base de Conocimiento - JugarEnChile.com\n\n## Sobre Nosotros - Fantasy Games SPA\n\nFantasy Games SPA es una empresa chilena líder en entretenimiento digital y juegos de azar online. Operamos la plataforma JugarEnChile.com, ofreciendo una experiencia de casino online segura, legal y responsable para jugadores chilenos.",
+      "embedding": [0.01, 0.02, 0.03],
+      "metadata": {
+        "length": 300,
+        "index": 0
+      }
+    },
+    {
+      "id": 1,
+      "text": "## Juegos Más Populares en Chile\n\n### Slots (Tragamonedas)\n1. **Book of Dead** - Aventura egipcia con alta volatilidad\n2. **Starburst** - Clásico de NetEnt con giros en ambas direcciones\n3. **Sweet Bonanza** - Temática de dulces con multiplicadores\n4. **Gates of Olympus** - Mitología griega con caídas en cascada\n5. **Wolf Gold** - Temática del salvaje oeste con jackpots progresivos",
+      "embedding": [0.04, 0.05, 0.06],
+      "metadata": {
+        "length": 400,
+        "index": 1
+      }
+    },
+    {
+      "id": 2,
+      "text": "## Información del Mercado Chileno\n\n### Datos Económicos\n- Salario mínimo en Chile: $460.000 CLP (2024)\n- Renta per cápita: Aproximadamente $1.200.000 CLP mensuales\n- Moneda oficial: Peso Chileno (CLP)\n\n### Métodos de Pago Populares en Chile\n- Transferencias bancarias\n- Tarjetas de crédito/débito (Visa, Mastercard)\n- Mercado Pago\n- Khipu\n- WebPay",
+      "embedding": [0.07, 0.08, 0.09],
+      "metadata": {
+        "length": 350,
+        "index": 2
+      }
+    },
+    {
+      "id": 3,
+      "text": "## Ventajas del Casino Online vs Casino Físico\n\n### Comodidad y Accesibilidad\nJuega desde cualquier lugar de Chile, 24/7, sin necesidad de desplazarte. Acceso desde computador, tablet o smartphone.\n\n### Bonificaciones y Promociones\nLos casinos online ofrecen bonos de bienvenida, giros gratis, cashback y programas de fidelidad mucho más generosos que los casinos físicos.",
+      "embedding": [0.10, 0.11, 0.12],
+      "metadata": {
+        "length": 380,
+        "index": 3
+      }
+    },
+    {
+      "id": 4,
+      "text": "## Juego Responsable y Ludopatía\n\n### ¿Qué es la Ludopatía?\nLa ludopatía es un trastorno del control de impulsos caracterizado por la necesidad compulsiva de jugar, a pesar de las consecuencias negativas. Es importante reconocer las señales:\n\n- Necesidad de apostar cantidades crecientes\n- Irritabilidad al intentar reducir el juego\n- Pensamientos constantes sobre el juego\n- Jugar para escapar de problemas\n- Mentir sobre la cantidad de tiempo/dinero gastado\n- Poner en riesgo relaciones o trabajo",
+      "embedding": [0.13, 0.14, 0.15],
+      "metadata": {
+        "length": 450,
+        "index": 4
+      }
+    },
+    {
+      "id": 5,
+      "text": "### Nuestro Compromiso con el Juego Responsable\n\nEn JugarEnChile.com tomamos el juego responsable muy en serio:\n\n1. **Límites de Depósito**: Establece límites diarios, semanales o mensuales\n2. **Límites de Tiempo**: Configura recordatorios de tiempo de juego\n3. **Autoexclusión**: Opción de suspender tu cuenta temporalmente\n4. **Verificación de Edad**: Prohibido para menores de 18 años\n5. **Recursos de Ayuda**: Enlaces a organizaciones de apoyo",
+      "embedding": [0.16, 0.17, 0.18],
+      "metadata": {
+        "length": 420,
+        "index": 5
+      }
+    },
+    {
+      "id": 6,
+      "text": "### Recursos de Ayuda en Chile\n- Línea de ayuda ludopatía: 600 360 7777\n- SENDA (Servicio Nacional para la Prevención y Rehabilitación)\n- Jugadores Anónimos Chile\n\nSi experimentas alguno de estos síntomas, busca ayuda:\n- Gastas más de lo que puedes permitirte\n- El juego afecta tu trabajo o relaciones\n- Sientes ansiedad o depresión relacionada con el juego\n- Intentas recuperar pérdidas constantemente",
+      "embedding": [0.19, 0.20, 0.21],
+      "metadata": {
+        "length": 400,
+        "index": 6
+      }
+    },
+    {
+      "id": 7,
+      "text": "## Soporte al Cliente\n\n### Canales de Atención\n- Chat en vivo 24/7 (integrado con Tawk.to)\n- Email: soporte@jugarenchile.com\n- WhatsApp: +56 9 XXXX XXXX\n- Tiempo de respuesta promedio: menos de 5 minutos\n\n### Preguntas Frecuentes\n\n**¿Cómo deposito dinero?**\nPuedes depositar mediante transferencia bancaria, tarjetas o billeteras electrónicas. Los depósitos son instantáneos.",
+      "embedding": [0.22, 0.23, 0.24],
+      "metadata": {
+        "length": 380,
+        "index": 7
+      }
+    },
+    {
+      "id": 8,
+      "text": "**¿Cuánto demoran los retiros?**\nLos retiros se procesan en 24-48 horas hábiles después de la verificación.\n\n**¿Es seguro jugar online?**\nSí, utilizamos la misma tecnología de encriptación que los bancos.\n\n**¿Puedo jugar desde mi celular?**\nSí, nuestra plataforma es totalmente responsive y funciona en todos los dispositivos.\n\n**¿Hay un bono de bienvenida?**\nSí, ofrecemos bonos de bienvenida para nuevos jugadores. Consulta términos y condiciones.",
+      "embedding": [0.25, 0.26, 0.27],
+      "metadata": {
+        "length": 420,
+        "index": 8
+      }
+    },
+    {
+      "id": 9,
+      "text": "## Consejos para Jugadores\n\n### Gestión de Bankroll\n- Establece un presupuesto antes de jugar\n- Nunca apuestes dinero que necesitas para gastos esenciales\n- Divide tu bankroll en sesiones\n- No persigas las pérdidas\n\n### Estrategias de Juego\n- Aprende las reglas antes de jugar\n- Comienza con apuestas pequeñas\n- Aprovecha los bonos y promociones\n- Juega en juegos con RTP alto (Return to Player)\n\n### Cuándo Parar\n- Establece límites de ganancia y pérdida\n- Toma descansos regulares\n- No juegues bajo influencia de alcohol\n- Si no te diviertes, es hora de parar",
+      "embedding": [0.28, 0.29, 0.30],
+      "metadata": {
+        "length": 500,
+        "index": 9
+      }
+    }
+  ]
+}
