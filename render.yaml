@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: jugar-ai-render
+    runtime: node
+    region: oregon
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TAWK_WEBHOOK_SECRET
+        sync: false
+      - key: TAWK_API_KEY
+        sync: false
+      - key: TAWK_PROPERTY_ID
+        sync: false
+      - key: EMBEDDING_MODEL
+        value: text-embedding-3-large
+      - key: CHUNK_SIZE
+        value: 1000
+      - key: CHUNK_OVERLAP
+        value: 200
+      - key: MAX_TOKENS
+        value: 500
+      - key: TEMPERATURE
+        value: 0.7
+      - key: MODEL
+        value: gpt-4-turbo-preview
+    healthCheckPath: /health
+    autoDeploy: true
