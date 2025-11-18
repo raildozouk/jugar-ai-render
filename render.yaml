@@ -1,4 +1,5 @@
 services:
+  # Serviço Web Principal
   - type: web
     name: jugar-ai-render
     runtime: node
@@ -11,6 +12,8 @@ services:
         value: production
       - key: PORT
         value: 10000
+      - key: LOG_LEVEL
+        value: info
       - key: OPENAI_API_KEY
         sync: false
       - key: TAWK_WEBHOOK_SECRET
@@ -19,6 +22,15 @@ services:
         sync: false
       - key: TAWK_PROPERTY_ID
         sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: jugar-ai-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: jugar-ai-cache
+          property: connectionString
       - key: EMBEDDING_MODEL
         value: text-embedding-3-large
       - key: CHUNK_SIZE
@@ -31,5 +43,30 @@ services:
         value: 0.7
       - key: MODEL
         value: gpt-4-turbo-preview
+      - key: CACHE_TTL
+        value: 3600
+      - key: ENABLE_METRICS
+        value: true
     healthCheckPath: /health
     autoDeploy: true
+
+  # Base de datos PostgreSQL
+  - type: pserv
+    name: jugar-ai-db
+    runtime: docker
+    plan: starter
+    region: oregon
+    env: docker
+    dockerfilePath: ./Dockerfile.postgres
+    disk:
+      name: jugar-ai-db-data
+      mountPath: /var/lib/postgresql/data
+      sizeGB: 1
+
+# Redis Cache (opcional - comentar si no se necesita)
+# - type: redis
+#   name: jugar-ai-cache
+#   region: oregon
+#   plan: starter
+#   maxmemoryPolicy: allkeys-lru
+#   ipAllowList: []

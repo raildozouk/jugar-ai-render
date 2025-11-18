@@ -27,4 +27,13 @@ router.get('/status', (req, res) => {
   webhookController.statusEndpoint(req, res);
 });
 
+/**
+ * GET /api/analytics
+ * Endpoint para obtener analytics y métricas
+ * Query params: period (daily|weekly), days (número de días)
+ */
+router.get('/analytics', (req, res) => {
+  webhookController.analyticsEndpoint(req, res);
+});
+
 export default router;
